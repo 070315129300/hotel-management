@@ -1,0 +1,939 @@
+///////////
+////////////////WORK
+.work {
+    background-color: #fff;
+    width: 70%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: .2rem;
+    margin-top: -5rem;
+    position: relative;
+    z-index: 100;
+    box-shadow: 0 .5rem 1rem rgba(#000, 0.15);
+
+    @media only screen and (max-width: $bp-small) {
+        width: 50%;
+       
+    }
+   
+
+    &__layer {
+        border: 1px solid #656565;
+        padding: 2rem .5rem;
+        display: flex;
+        justify-content: space-evenly;
+
+        @media only screen and (max-width: $bp-large) {
+            padding: 1.5rem .5rem;
+            
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+          
+        }
+    }
+
+    &__details {
+      text-align: center;
+      border: 1px solid #656565;
+      padding: 1rem 5rem;
+
+        @media only screen and (max-width: $bp-large) {
+            padding: .5rem 3.5rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+           margin-bottom: 1rem;
+        }        
+    }
+
+    &__heading {
+        font-size: 2.3rem;
+           
+    }
+
+    &__paragraph {
+        font-size: 1.8rem;
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+
+
+
+///////////
+////////////////ABOUT US
+.about {
+    display: flex;
+    justify-content: center;
+
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+    }
+   
+    &__image {
+        background-image: url(../img/room-2.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 40%;
+
+        @media only screen and (max-width: $bp-medium) {
+            display: none;
+        }
+    }
+
+    &__text-box {
+        width: 60%;
+        padding: 3rem;
+        color: #fff;
+        background-color: var( --color-dark-brown);
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 100%;
+        }
+    }
+
+    &__heading {
+        font-size: 4rem;
+        font-weight: 200;
+        margin-bottom: 1.6rem;
+        text-transform: uppercase;
+        @media only screen and (max-width: $bp-medium) {
+           text-align: center;
+        }
+    }
+
+    &__paragraph {
+        color: #fff;
+        font-size: 1.6rem;
+        line-height: 1.8;
+        margin-bottom: 4rem;
+    }
+
+    &__button {
+        text-decoration: none;
+        font-size: 1.8rem;
+        background-color: #fff;
+        color: var( --color-dark-brown);
+        padding: 1rem 3rem;
+        border-radius: .2rem;
+    }
+}
+
+///////////
+////////////////OUR ROOMS
+
+.room {
+  
+    display: flex;
+    justify-content: space-evenly;
+    //height: 45rem;
+    padding: 0rem;
+
+    @media only screen and (max-width: $bp-large) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__secondary {
+        text-align: center;
+        font-size: 4rem;
+        text-transform: uppercase;
+        color: #130d07;
+        font-weight: 300;
+       
+
+        @media only screen and (max-width: $bp-large) {
+          margin-bottom: 2rem;
+
+        }
+        
+    }
+
+    &__box {
+        background-color: #fff;
+        width: 28%;
+        box-shadow: 0 1.5rem 4rem rgba(#000, 0.20);
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        border-radius: .2rem;
+        
+        @media only screen and (max-width: $bp-large) {
+            width: 70%;
+            margin-bottom: 6rem;
+        }
+        
+        
+    }
+
+    &__image {
+        border-top-left-radius: .2rem;
+        border-top-right-radius: .2rem;
+        height: auto;
+        width: 100%;
+        border-bottom: 1px solid var(--color-dark-brown);
+        padding-bottom: .1rem;
+       
+
+
+    }
+
+    &__pricing {
+        background-color:var(--color-darker-brown);
+        display: inline-block;
+        padding: .3rem .8rem;
+        font-size: 1.2rem;
+        border-radius: .2rem;
+        margin-left: 0rem;
+        margin-top: -5rem;
+        position: relative;
+        z-index: 100;
+    }
+
+    &__text {
+        padding: 2rem;
+        padding-top: 1.5rem;
+
+        @media only screen and (max-width: $bp-large) {
+            text-align: center;
+        }
+    }
+
+    &__heading {
+        font-family: montserrat;
+        text-transform: uppercase;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1.3rem;
+        color: var(--color-darker-brown);
+       
+    }
+
+    &__paragraph {
+        font-size: 1.6rem;
+    }
+
+    &__buttons {
+       display: flex;
+       justify-content: center;
+       margin-top: 3.5rem;
+    }
+
+    &__btn-2 {
+        text-decoration: none;
+        font-size: 1.8rem;
+        background-color:var(--color-light-brown);;
+        padding: 1rem 5rem;
+        border-radius: .2rem;
+        color: #fff;
+        transition: all .2s;
+        &:hover {
+            transform: scale(1.1);
+           }   
+    }
+
+    &__details {
+        text-align: center;
+        margin-top: 6rem;
+        transition: all .2s;
+      
+
+        &:hover {
+            transform: translateY(.3rem);
+        }
+        
+        & a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 2rem;
+            text-transform: uppercase;
+            background-color: var(--color-dark-brown);
+            padding: 2rem 10rem;
+            border-radius: 50px;
+            box-shadow: 0 .5rem .4rem rgba(rgba(0, 0, 0, 0.411), 0.1);
+            letter-spacing: .1rem;
+
+            @media only screen and (max-width: $bp-smaller) {
+               padding: 2rem 3rem;
+               
+            }   
+            
+        }
+    }
+}
+
+///////////
+////////////////OUR GALLERY
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-large) {
+       flex-direction: column;
+      
+    }
+     
+    
+    &__text {
+        padding: 0 3rem;
+
+        @media only screen and (max-width: $bp-large) {
+            padding: 0 8rem ;
+            margin-bottom: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-smaller) {
+            text-align: left;
+            padding: 0 2rem;
+        }
+    }
+
+    &__heading {
+        font-size: 4rem;
+        color: var(--color-darker-brown);
+        text-transform: uppercase;
+        font-weight: 300;
+        @media only screen and (max-width: $bp-large) {
+           text-align: center;
+           margin-bottom: 2rem;
+        }
+    }
+
+    &__paragraph {
+        font-size: 1.6rem;
+    }
+
+    &__btn-box {
+        margin-top: 1.5rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            text-align: center;
+        }
+    }
+
+    &__btn {
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.5rem;
+        background-color: var(--color-light-brown);
+        padding: 1.2rem 3rem;
+        border-radius: .2rem;
+        color: #fff;
+        transition: all .2s;
+
+        &:active {
+            transform: scale(1.1);
+        }
+    }
+
+    &__image-box2 {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid var(--color-darker-brown);
+        border-radius: .1rem;
+        padding: .5rem;
+
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+            width: 80%;
+        }
+      
+    }
+    &__image-box {
+        display: flex;
+        border-left: 1px solid var(--color-darker-brown);
+        border-right: 1px solid var(--color-darker-brown);
+        border-radius: .1rem;
+        justify-content: center;
+
+        &:not(:last-child) {
+            border-bottom: none;
+            border-top: 1px solid var(--color-darker-brown);
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+
+        
+    }
+
+    &__image {
+        width: 22rem;
+        box-shadow: 0 .5rem .4rem rgba(rgba(0, 0, 0, 0.411), 0.1);
+        transition: all .2s;
+
+        @media only screen and (max-width: $bp-large) {
+            width: 30rem;
+           
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 22rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            width: 100%;
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+        
+        &:hover {
+            transform: scale(.9);
+            border: 1px solid var(--color-darker-brown);
+            border-radius: .3rem;
+        }
+       
+    }
+}
+
+///////////
+////////////////OUR SERVICES
+.service {
+   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+       flex-direction: column;
+    }
+      
+
+    &__secondary {
+        text-align: center;
+        font-size: 4rem;
+        color: var(--color-darker-brown);
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+
+    &__box {
+        padding: 6rem 3rem 6rem  3rem;
+        width: 30%;
+        box-shadow: 0 0 4.5rem rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        color:  var(--color-dark-brown);
+        border-radius: .3rem;
+        transition: all .5s;
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 70%;
+            margin-bottom: 4rem;
+        }
+
+        @media only screen and (max-width: $bp-smaller) {
+            width: 80%;
+        }
+
+        &:hover {
+            background-color: var(--color-dark-brown);
+            color: #fff;
+        }
+    }
+
+    &__icon {
+        width: 100%;
+        font-size: 4rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        
+        
+    }
+
+    &__heading {  
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+        
+
+    }
+
+    &__paragraph {
+        text-align: center;
+        font-size: 1.6rem;
+
+    }
+}
+
+///////////
+////////////////OUR CLIENTS
+.review {
+    background-image: linear-gradient(#1a000de0, #1a000de0), url(../img/hero.jpg);
+    background-size: cover;
+    background-position: cover;
+    background-attachment: fixed;
+    padding: 10rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+    @media only screen and (max-width: $bp-large) {
+        padding: 10rem 2rem;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+        flex-direction: column;
+        padding: 8rem 2rem;
+    }
+
+    &__last {
+
+        @media only screen and (max-width: $bp-medium) {
+            display: none;
+        }
+
+        @media only screen and (max-width: $bp-smaller) {
+            display: block;
+        }
+    }
+
+    &__secondary {
+        text-align: center;
+        font-size: 4rem;
+        color: var(--color-darker-brown);
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+
+    &__slide {
+        background-color: #8F5F2F;
+        padding: 0 1.5rem;
+        border-radius: .2rem;
+    }
+
+    &__arrow {
+        font-size: 3rem;
+        color: #fff;
+    }
+
+   &__box {
+    background-color: #fff;
+    width: 28%;
+    padding: 2rem;
+    border-radius: .2rem;
+    box-shadow: 0 .5rem 2rem rgba(#000, 0.11);
+    transition: all .2s;
+
+    @media only screen and (max-width: $bp-medium) {
+       width: 40%;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+        width: 90%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }   
+    
+    &:hover {
+        background-color: var(--color-darker-brown);
+        color: #fff;
+        transform: translateY(-.5rem);
+    }
+   }
+
+   &__paragraph {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+   }
+
+   &__user-box {
+    display: flex;
+    align-items: center;
+   }
+
+   &__photo {
+    width: 15%;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+   }
+
+  
+
+   &__username {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    color: #1a000d;
+   }
+
+}
+
+///////////
+////////////////OUR TEAM 
+.team {
+  
+    padding: 2rem 10rem;
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $bp-large) {
+       flex-wrap: wrap;
+       padding: 2rem 5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+        padding: 2rem 3rem;
+    }
+
+    &__secondary {
+        text-align: center;
+        font-size: 4rem;
+        color: var(--color-darker-brown);
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+
+    &__box {
+        background-color: #fff;
+        width: 24%;
+        display: flex;
+        flex-direction: column;
+        height: 36rem;
+        box-shadow: 0 1.5rem 4rem rgba(#000, 0.20);
+        position: relative;
+        transition: all .2s;
+
+        @media only screen and (max-width: $bp-large) {
+            width: 45%;
+            height: 55rem;
+            margin: 0 auto;
+            &:not(:last-child) {
+                margin-bottom: 5rem;
+            }
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 70%;
+            height: 78rem;
+        }
+
+        @media only screen and (max-width: $bp-smaller) {
+            width: 100%;
+            height: 70rem;
+        }
+
+        &:hover {
+            transform: translateY(1rem);
+        }
+
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 3.5rem;
+        position: absolute;
+        top: 65%;
+        left: 8%;
+        right: 8%;
+
+        @media only screen and (max-width: $bp-large) {
+           left: 20%;
+           right: 20%;
+        }
+
+        @media only screen and (max-width: $bp-smaller) {
+            top: 77%;
+        }
+
+       
+    }
+
+    &__social-icon {
+        background-color: var(--color-dark-brown);
+        padding: 1rem 1.5rem;
+        border-radius: .2rem;
+        color: #fff;
+        font-size: 1.5rem;
+
+        &:not(:last-child){
+            margin-right: 1rem;
+
+        }
+    }
+
+    &__photo{
+        background-image: url(../img/receptionist.jpg);
+        background-position: center;
+        background-size: cover;
+        flex-basis: 68%;
+
+        @media only screen and (max-width: $bp-smaller) {
+           flex-basis: 80%;
+        }
+         
+    }
+
+    &__photo--2{
+        background-image: url(../img/team-9.jpg);
+    }
+
+    &__photo--3{
+        background-image: url(../img/team-5.jpg);
+    }
+
+    &__photo--4{
+        background-image: url(../img/team-6.jpg);
+        
+    }
+
+    &__text {
+        margin-top: 5rem;
+        text-align: center;
+        @media only screen and (max-width: $bp-medium) {
+           margin-top: 10rem;
+        }
+
+        @media only screen and (max-width: $bp-smaller) {
+            margin-top: 4rem;
+         }
+        
+    }
+
+    &__name {
+        font-size: 2rem;
+        color: #1a000d;
+        text-transform: uppercase;
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__role {
+        font-size: 1.6rem;
+        @media only screen and (max-width: $bp-medium) {
+           font-size: 2rem;
+        }
+    }
+}
+
+///////////
+////////////////NEWSLETTER
+.news {
+    margin-bottom: -14rem;
+    padding: 2rem;
+    position: relative;
+    z-index: 100;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 0;
+       
+    }   
+   
+    &__layer1 {
+        border: 1px solid var(--color-dark-brown);
+        width: 64%;
+        margin: 0 auto;
+        padding: .5rem;
+        border-radius: .2rem;
+
+        @media only screen and (max-width: $bp-large) {
+           width: 80%;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            width: 100%;
+           
+        }        
+    }
+
+    &__layer2 {
+        border: 1px solid var(--color-dark-brown);
+        width: 100%;
+        padding: .5rem;
+        padding-top: 0;
+        border-radius: .2rem;
+    }
+
+    &__box {
+        background-color: #fff;
+        width: 100%;
+        padding: 5rem 15rem;
+        border-radius: .2rem;
+
+        @media only screen and (max-width: $bp-small) {
+            padding: 3rem;
+           
+        }   
+    }
+
+    &__heading {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    &__form {
+        width: 100%;
+    }
+
+    &__input {
+        padding: 1.5rem 2rem;
+        width: 99%;
+        font-size: 1.8rem;
+        outline: none;
+        border: 1px solid #777;
+        border-radius: .2rem;
+        color: #777;
+
+        @media only screen and (max-width: $bp-smaller) {
+            width: 100%;
+        }
+
+        &::placeholder {
+            font-size: 1.8rem;
+            color: #777;
+        }
+        
+    }
+
+    &__button {
+       background-color: var(--color-dark-brown);
+       color: #fff;
+       border: none;
+       border-radius: .2rem;
+       padding: 1rem 1.8rem;
+       font-size: 1.8rem;
+       margin-left: -10rem;
+       cursor: pointer;
+
+       @media only screen and (max-width: $bp-smaller) {
+       margin-left: 0;
+       margin-top: 2rem;
+    }
+
+    }
+}
+
+///////////
+////////////////FOOTER
+.footer {
+    background-color:var(--color-dark-brown);
+    padding: 5rem;
+    @media only screen and (max-width: $bp-small) {
+       padding: 2rem;
+    }  
+    
+    @media only screen and (max-width: $bp-smaller) {
+       padding: 0;
+    }
+   
+    &__logo {
+        margin-top: 12rem;
+        width: 12%;
+        margin-right: 45%;
+        margin-left: 45%;
+
+        @media only screen and (max-width: $bp-small) {
+            margin-top: 18rem;
+           
+        }   
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5rem;
+
+        @media only screen and (max-width: $bp-large) {
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+        }
+
+        @media only screen and (max-width: $bp-smaller) {
+            margin-bottom: none;
+        }
+    }
+
+    &__nav {
+        list-style: none;
+        display: flex;
+        border-top: 1px solid rgba(255, 255, 255, 0.63);
+        padding-top: 2rem;
+        
+        @media only screen and (max-width: $bp-large) {
+           margin-bottom: 8rem;
+           justify-content: center;
+           border-top: none;
+        }
+
+        @media only screen and (max-width: $bp-smaller) {
+            width: 100%;
+            flex-wrap: wrap;
+            padding: 1rem;
+        }       
+    }
+
+    &__list {
+       
+        text-align: center;
+        &:hover {
+            transform: rotate(5deg);
+        }
+
+        &:not(:last-child) {
+            margin-right: 2.5rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.8rem;
+        transition: all .2s;
+        
+        &:hover {
+            padding: .5rem 1rem;
+            border-radius: .1rem;
+            background-color: #86592d;
+            box-shadow: 0 1rem 2rem rgba(#000, .4);            
+        }
+    }
+
+    &__copyright {
+        font-size: 1.4rem;
+        color: #fff;
+        border-top: 1px solid rgba(255, 255, 255, 0.63);
+        padding-top: 2rem;
+        text-align: center;
+
+        @media only screen and (max-width: $bp-large) {
+            border-top: none;
+        }
+    }
+}
+
+.social {
+    margin-top: 5rem;
+    background-color: var(--color-dark-brown);
+    text-align: center;
+
+    &__link {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.8rem;
+
+        &:not(:last-child) {margin-right: 5rem;}
+    }
+}
+
+.btn-animated {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}

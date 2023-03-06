@@ -1,0 +1,48 @@
+.room-details {
+    width: 50%;
+    margin-top: 4rem;
+    align-self: center;
+
+    @media only screen and (max-width: $bp-large) {
+        width: 70%;
+    }
+
+    &__heading {
+        font-size: 2rem;
+        color: #1a000d;
+        margin-bottom: 1.5rem;
+        text-decoration: underline;
+    }
+
+    &__paragraph {
+        font-size: 1.6rem;
+    }
+    
+}
+.executive {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    order: 2;
+    @media only screen and (max-width: $bp-large) {
+        order: 0;
+        
+    }
+}
+
+.exe {
+    @media only screen and (max-width: $bp-large) {
+        margin-bottom: 6rem;
+    }
+}
+
+.junior {
+    margin-top: 6rem;
+}
+
+.deluxe {
+    margin-bottom: 6rem;
+}
+
+.del {
+    margin-bottom: 6rem;
+}

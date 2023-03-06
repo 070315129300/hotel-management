@@ -1,0 +1,286 @@
+.book {
+    padding: 5rem;
+    color: #1a000d;
+    outline: none;
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid #1a000d;
+
+    @media only screen and (max-width: $bp-medium) {
+        width: 85%;
+        padding: 5rem 2rem;
+       
+    } 
+        
+
+    &__heading {
+        font-size: 3.5rem;
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 3rem;
+        color: #fff;
+        background-color: #560114;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        margin-right: 30%;
+        margin-left: 30%;
+        text-align: center;
+        border-radius: 3rem;
+        padding: .2rem 0;
+
+        @media only screen and (max-width: $bp-small) {
+            width: 60%;
+            margin-right: 20%;
+            margin-left: 20%;
+        }
+
+        @media only screen and (max-width: $bp-smaller) {
+            width: 90%;
+            margin-right: 5%;
+            margin-left: 5%;
+            
+        }
+    }
+
+    &__name-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media only screen and (max-width: $bp-smaller) {
+            flex-direction: column;
+            align-items: flex-start;
+           
+        }   
+        
+    }
+
+    &__name {
+        flex-basis: 49%;
+        margin-bottom: 4rem;
+
+        @media only screen and (max-width: $bp-smaller) {
+           width: 90%;
+           
+        }   
+       
+        
+    }
+
+    &__label-firstname {
+       display: block;
+       font-size: 1.5rem;
+       color: #560114;
+       font-weight: 700;
+    }
+
+    &__input-firstname {
+        padding: 1.5rem;
+        width: 100%;
+        border: 1px solid #777;
+        outline: none;
+
+        &::placeholder{
+            color: #777;
+            font-family: montserrat;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__input-lastname {
+        padding: 1.5rem;
+        width: 100%;
+        border: 1px solid #777;
+        outline: none;
+
+        &::placeholder{
+            color: #777;
+            font-family: montserrat;
+            font-size: 1.5rem;
+        }
+    }
+
+    #name.book__input-firstname, #name.book__input-lastname {
+        color: #777;
+        font-family: montserrat;
+        font-size: 1.5rem; 
+    }
+
+    &__contact-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media only screen and (max-width: $bp-smaller) {
+            flex-direction: column;
+            align-items: flex-start;
+           
+        }   
+    }
+
+    &__contact {
+        flex-basis: 49%;
+        margin-bottom: 4rem;
+
+        @media only screen and (max-width: $bp-smaller) {
+            width: 90%;
+            
+         }   
+    }
+
+    &__label-phone, &__label-mail {
+        display: block;
+        font-size: 1.5rem;
+        color: #560114;
+        font-weight: 700;
+    }
+
+    &__input-phone, &__input-mail {
+        padding:  1.5rem;
+        width: 100%;
+        border: 1px solid #777;
+        outline: none;
+
+        &::placeholder{
+            color: #777;
+            font-family: montserrat;
+            font-size: 1.5rem;
+        }
+    }
+
+    input#phone.book__input-phone, input#mail.book__input-mail {
+        color: #777;
+        font-family: montserrat;
+        font-size: 1.5rem;
+    }
+
+    &__date-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media only screen and (max-width: $bp-smaller) {
+            flex-direction: column;
+            align-items: flex-start;
+           
+        }   
+    }
+
+    &__arrival {
+        flex-basis: 32%;
+    }
+
+    &__label-date {
+        font-size: 1.5rem;
+        color: #560114;
+        font-weight: 700;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 1.5rem;
+        margin-bottom: 4rem;
+        border: 1px solid #777;
+        outline: none;
+        color: #777;
+        font-family: montserrat;
+        font-size: 1.5rem;
+
+        &::placeholder{
+            color: #777;
+            font-family: montserrat;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__type-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media only screen and (max-width: $bp-smaller) {
+            flex-direction: column;
+            align-items: flex-start;
+           
+        }   
+    }
+
+    &__type {
+        flex-basis: 49%;
+        margin-bottom: 4rem;
+        
+    }
+
+    &__label-guest {
+        font-size: 1.5rem;
+        color: #560114;
+        font-weight: 700; 
+    }
+
+    &____option {
+        color: #777;
+        font-family: montserrat;
+        font-size: 1.5rem;
+    }
+
+    &__adult {
+        width: 100%;
+        padding: 1.5rem;
+        border: 1px solid #777;
+        outline: none;
+    }
+    &__message-box {
+        margin-bottom: 4rem;
+    }
+    &__label-message {
+        display: block;
+        font-size: 1.5rem;
+        color: #560114;
+        font-weight: 700; 
+    }
+
+    &__message {
+        width: 100%;
+        padding: 2rem;
+        border: 1px solid #777;
+        outline: none;
+
+    }
+
+    &__reserve {
+        padding: 1rem 3rem;
+        background-color: var(--color-dark-brown);
+        font-family: Syne, sans-serif;
+        font-size: 2rem;
+        color: #fff;
+        border-radius: .3rem;
+        outline: none;
+        border: none;
+        
+    }
+
+}
+
+select#guest.book__adult {
+    background-color: #fff;
+    color: #777;
+    font-family: montserrat;
+    font-size: 1.5rem;
+}
+
+select#room.book__adult {
+    background-color: #fff;
+    color: #777;
+    font-family: montserrat;
+    font-size: 1.5rem;
+} 
+
+textarea#msg.book__message {
+    background-color: #fff;
+    color: #777;
+    font-family: montserrat;
+    font-size: 1.5rem;
+}
