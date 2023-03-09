@@ -31,10 +31,9 @@ Route::get('addstaff', [AdminController::class, 'addstaff']);
 Route::get('alladmin',[AdminController::class, 'alladmin']);
 Route::get('allguest', [AdminController::class,'allguest']);
 Route::get('allstaff', [AdminController::class, 'allstaff']);
-
-
-
-
+Route::post('insertaddmin', [AdminController::class, 'insertadmin']);
+Route::post('insertstaff', [AdminController::class, 'insertstaff']);
+Route::get('logout',[AdminController::class,'logout']);
 
 Route::middleware([
     'auth:sanctum',

@@ -16,11 +16,17 @@
         <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
         <link rel="stylesheet" href="assets/vendors/owl-carousel-2/owl.carousel.min.css">
         <link rel="stylesheet" href="assets/vendors/owl-carousel-2/owl.theme.default.min.css">
-        <!-- End plugin css for this page -->
-        <!-- inject:css -->
-        <!-- endinject -->
-        <!-- Layout styles -->
         <link rel="stylesheet" href="assets/css/style.css">
-        <!-- End layout styles -->
         <link rel="shortcut icon" href="assets/images/favicon.png" />
+
+        <link rel="stylesheet" href="assets/css/add-admin.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+{{--        <script--}}
+{{--            src="https://kit.fontawesome.com/f698b33fa3.js"--}}
+{{--            crossorigin="anonymous"--}}
+{{--        ></script>--}}
+{{--        <script src="js/header.js" defer></script>--}}
+
     </head>
