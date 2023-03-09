@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\GuestController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +19,22 @@ use App\Http\Controllers\AdminController;
 
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('gallery', [HomeController::class, 'gallery']);
+Route::get('about', [HomeController::class, 'about']);
+
+Route::get('bookaroom', [HomeController::class, 'bookaroom']);
+
+Route::get('room', [HomeController::class, 'room']);
+Route::post('bookaroomguest', [GuestController::class, 'bookaroomguest']);
+Route::get('addadmin', [AdminController::class, 'addadmin']);
+Route::get('addstaff', [AdminController::class, 'addstaff']);
+Route::get('alladmin',[AdminController::class, 'alladmin']);
+Route::get('allguest', [AdminController::class,'allguest']);
+Route::get('allstaff', [AdminController::class, 'allstaff']);
+
+
+
+
 
 Route::middleware([
     'auth:sanctum',
