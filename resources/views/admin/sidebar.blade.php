@@ -3,8 +3,8 @@
 <!-- partial:partials/_sidebar.html -->
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-        <a class="sidebar-brand brand-logo" href="{{url('dashboard')}}"><img src="assets/images/logo.svg" alt="logo" /></a>
-        <a class="sidebar-brand brand-logo-mini" href="{{url('dashboard')}}"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+{{--        <a class="sidebar-brand brand-logo" href="{{url('dashboard')}}"><img src="assets/images/logo.svg" alt="logo" /></a>--}}
+{{--        <a class="sidebar-brand brand-logo-mini" href="{{url('dashboard')}}"><img src="assets/images/logo-mini.svg" alt="logo" /></a>--}}
     </div>
     <ul class="nav">
 
@@ -17,7 +17,7 @@
                         <span class="count bg-success"></span>
                     </div>
                     <div class="profile-name">
-                        <h5 class="mb-0 font-weight-normal">Admin</h5>
+                        <h5 class="mb-0 font-weight-normal">{{ Auth::user()->name }}</h5>
 
                     </div>
                 </div>
